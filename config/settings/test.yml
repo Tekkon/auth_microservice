@@ -1,0 +1,4 @@
+db:
+  database: auth_microservice_test
+  password: <%= ENV['AUTH_DATABASE_PASSWORD'] %>
+  max_connections: 1

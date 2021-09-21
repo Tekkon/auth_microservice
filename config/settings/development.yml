@@ -1,0 +1,3 @@
+db:
+  database: auth_microservice_development
+  password: <%= ENV['AUTH_DATABASE_PASSWORD'] %>
