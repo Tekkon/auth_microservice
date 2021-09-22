@@ -4,7 +4,7 @@ module UserSessions
 
     param :email
     param :password
-    option :user, default: proc { User.find_by(email: @email) }, reader: false
+    option :user, default: proc { User.find(email: @email) }, reader: false
 
     attr_reader :session
 
