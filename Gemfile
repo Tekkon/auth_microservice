@@ -8,6 +8,7 @@ ruby '2.7.2'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'sequel', '~> 5.32.0'
 
+gem 'rake', '~> 13.0.1'
 gem 'puma', '~> 4.3'
 
 gem 'sinatra', '~> 2.0.0', require: 'sinatra/base'
