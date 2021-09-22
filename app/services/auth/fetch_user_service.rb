@@ -14,7 +14,7 @@ module Auth
     private
 
     def session
-      @session ||= UserSession.find_by(uuid: @uuid)
+      @session ||= UserSession.find(uuid: @uuid)
     end
   end
 end
