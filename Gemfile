@@ -29,6 +29,8 @@ gem 'require_all'
 
 gem 'dotenv'
 
+gem 'jwt', '~> 2.2.1'
+
 group :test do
   gem 'factory_bot', '~> 5.2.0'
   gem 'rack-test', '~> 1.1.0'
