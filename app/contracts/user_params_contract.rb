@@ -3,7 +3,7 @@ class UserParamsContract < Dry::Validation::Contract
     required(:user).hash do
       required(:name).value(:string)
       required(:email).value(:string)
-      required(:password_digest).value(:string)
+      required(:password).value(:string)
     end
   end
 end

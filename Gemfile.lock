@@ -7,7 +7,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    backports (3.21.0)
+    backports (3.15.0)
+    bcrypt (3.1.16)
     concurrent-ruby (1.1.9)
     config (2.2.3)
       deep_merge (~> 1.2, >= 1.2.1)
@@ -89,6 +90,9 @@ GEM
     rspec-support (3.9.4)
     ruby2_keywords (0.0.5)
     sequel (5.32.0)
+    sequel_secure_password (0.2.15)
+      bcrypt (>= 3.1, < 4.0)
+      sequel (>= 4.1.0, < 6.0)
     sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -108,7 +112,8 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  arm64-darwin-20
+  ruby
+  universal-darwin-20
 
 DEPENDENCIES
   activesupport (~> 6.0.0)
@@ -127,6 +132,7 @@ DEPENDENCIES
   require_all
   rspec (~> 3.9.0)
   sequel (~> 5.32.0)
+  sequel_secure_password
   sinatra (~> 2.0.0)
   sinatra-contrib (~> 2.0.0)
 

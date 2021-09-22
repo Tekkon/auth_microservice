@@ -5,7 +5,6 @@ Sequel.migration do
       foreign_key :user_id, :users
 
       Uuid :uuid, null: false
-      Bignum :user_id, null: false
 
       index [:uuid], name: :index_user_sessions_on_uuid
       index [:user_id], name: :index_user_sessions_on_user_id
