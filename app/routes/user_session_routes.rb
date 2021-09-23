@@ -1,5 +1,5 @@
 class UserSessionRoutes < Application
-  post '/' do
+  post '/v1/login' do
     session_params = validate_with!(SessionParamsContract)
 
     result = UserSessions::CreateService.call(*session_params.to_h.values)

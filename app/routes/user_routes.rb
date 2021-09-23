@@ -1,7 +1,7 @@
 class UserRoutes < Application
   helpers PaginationLinks
 
-  post '/' do
+  post '/v1/signup' do
     user_params = validate_with!(UserParamsContract)
 
     result = Users::CreateService.call(*user_params.to_h.values)
