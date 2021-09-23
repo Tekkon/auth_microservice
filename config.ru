@@ -2,6 +2,6 @@
 
 require_relative 'config/environment'
 
-map '/ads' do
-  run UserRoutes
-end
+run AuthRoutes
+run UserRoutes
+run UserSessionRoutes

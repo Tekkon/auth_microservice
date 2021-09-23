@@ -1,7 +1,7 @@
 class AuthRoutes < Application
   helpers Auth
 
-  post '/v1' do
+  post '/v1/auth' do
     result = Auth::FetchUserService.call(extracted_token['uuid'])
 
     if result.success?
