@@ -26,6 +26,11 @@ module ApiErrors
     error_response I18n.t(:not_unique, scope: 'api.errors')
   end
 
+  error Sequel::ValidationFailed do
+    status 422
+    error_response I18n.t(:missing_parameters, scope: 'api.errors')
+  end
+
   error Validations::InvalidParams, KeyError do
     status 422
     error_response I18n.t(:missing_parameters, scope: 'api.errors')
