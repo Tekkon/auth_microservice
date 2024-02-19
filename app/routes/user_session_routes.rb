@@ -13,6 +13,7 @@ class UserSessionRoutes < Application
       status 201
       json meta: meta
     else
+      status 401
       error_response(result.session || result.errors)
     end
   end
